@@ -28,7 +28,8 @@
 <tbody>
 <c:forEach var="c" items="${cs }">
 <tr>
-<td>${c.id } </td><td>${c.libelle } </td><td> <a href='deletecat/${c.id}' class="btn btn-primary">delete</a> </td><td><a href="editcat/${c.id}">Edit</a> </td>
+<td>${c.id } </td><td>${c.libelle } </td><td> <a href='deletecat/${c.id}' class="btn btn-primary">delete</a> </td>
+<td><a href="editcat/${c.id}">Edit</a> </td>
 <td>  
 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal${c.id }">Open Details</button>
  </td>

@@ -12,13 +12,17 @@
 <title>Insert title here</title>
 </head>
 <body>
-<table>
+<table class="table">
 <c:forEach var="c" items="${cs }">
 <tr>
 <td>${c.id }  </td>
 <td>${c.libelle }  </td>
 <td> <a href='delete/${c.id }' class="btn btn-info">delete</a> </td>
+
+<td> <a href='addcat/${c.id }' class="btn btn-info">Edit</a> </td>
+
 </tr>
+
  </c:forEach>
 </table>
 </body>
